@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+</head>
+<body>
+	
+	<header>
+		<img class="i1" src="html-5.png">
+		<img class="i2" src="css-3.png">
+		<img style="border-radius: 0px" class="i3" src="js.png">
+		<img style="border-radius: 0px" class="i4" src="normalize.svg">
+		<img class="i5" src="gsap-js.png">
+		<img class="i6" src="github.png">
+		<div class="content">
+			<img id="avatar" src="imac.png" id="avatar">
+			<hgroup>
+				<h1>AUDIO SILVA</h1>
+				<hr>
+				<h2>Desarrollador Frontend</h2>
+			</hgroup>
+		</div>
+	</header>
+	<nav>
+		
+	</nav>
+	<section class="s1">
+		<h2>PORTAFOLIO</h2>
+		<hr>
+		<div>
+			 <img src="#">
+			 <img src="#">
+			 <img src="#">
+			 <img src="#">
+			 <img src="#">
+			 <img src="#">
+		</div>
+	</section>
+	<style>
+		* {
+	      margin: 0;
+			padding: 0;
+			font-family: Poppins;
+		}
+		
+		body {
+			background: rgb(252, 252, 252)
+		}
+		
+		header {
+			position: relative;
+			background-image: url("w1200.jpeg");
+			background-repeat: no-repeat;
+			background-size: calc(100% + 150px);
+			width: 100%;
+			color: rgb(252, 252, 252);
+		}
+		
+		header .content #avatar {
+			background: orange;
+			display: block;
+			margin: 0px auto 20px auto;
+			width: 60px;
+			padding: 20px;
+			border: solid rgb(252, 252, 252) 5px;
+			transform: scale(0.005);
+		}
+		[class *= "i"] {
+			
+			display: block;
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			left: calc(50% - 30px);
+			top:  22%;
+			transform: scale(0.01);
+		}
+		
+		header .content {
+			background: rgba(90, 90, 90, 0.8);
+			color: #fff;
+			padding: 40px 0px;
+			text-align: center;
+			height: 100%;
+		}
+		
+		header .content hgroup {
+			margin: auto;
+			width: 90%;
+		}
+		
+		header .content hgroup hr {
+			background: linear-gradient(to left, rgba(0, 0, 0, 0.01), white, rgba(0, 0, 0, 0.01));
+			margin: 5px 0px;
+			border: none;
+			height: 3px;
+			width: 100%;
+		}
+		
+		nav {
+			width: 100%;
+			height: 30px;
+			background: skyblue;
+			box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+		}
+		
+		.s1 {
+
+			padding: 20px 20px;
+			color: #444;
+		}
+		
+		.s1 h2 {
+			text-align: center;
+		}
+		
+		.s1 hr {
+			background: linear-gradient(to left, rgba(0, 0, 0, 0.0), skyblue, rgba(0, 0, 0, 0.0));
+			margin: 10px 0px;
+			border: none;
+			height: 5px;
+		}
+		
+		.s1 div {
+			width: 95%;
+			display: block;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.s1 div img {
+			display: block;
+			margin: 10px auto;
+			background: lightgreen;
+			width: 280px;
+			height: 180px;
+		}
+	</style>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+	<script src="gsap.min.js"></script>
+	<script>
+	if (window.innerWidth > 600) {
+		gsap.to("#avatar", {
+			duration: 0.85,
+			scale: 1.0,
+			opacity: "100%",
+		})
+		gsap.to(".i1", {
+			scale: 0.7,
+			x: -330,
+			delay: 1,
+		})
+		gsap.to(".i2", {
+			scale: 0.85,
+			x: -230,
+			delay: 1,
+		})
+		gsap.to(".i3", {
+			scale: 1.0,
+			x: -130 ,
+			delay: 1,
+		})
+		 gsap.to(".i4", {
+			scale: 1.0,
+			x: 130,
+			delay: 1,
+		})
+		 gsap.to(".i5", {
+			scale: 0.85,
+			x: 230 ,
+			delay: 1,
+		})
+		 gsap.to(".i6", {
+			scale: 0.7,
+			x: 320 ,
+			delay: 1,
+		})
+		} else {
+			gsap.set("#avatar", {
+				scale: 1.0,
+			})
+		}
+		</script>
+</body>
+</html>
